@@ -1,13 +1,18 @@
-;;;; ns-example.lisp
-(ns :ns-example)
+;;;; ns-example.liVp
+(ql:quickload `(:ns))
 
-(defun runner ()
-        "does the work"
-        (print "hello world")
-        t)
+(ns :ns-example
+    (:export #:main)
+    (:documentation "Example of namespace usage from ns atomic")
+    (:import-from :uiop :quit))
 
 (defun main ()
-   " main block"
-  (uiop:quit (unless (runner) 1)))
+   "main block"
+  (uiop:quit (unless 
+          (progn (print "Hello world.") t)
+          1)))
 
-(main)
+(ns :ns-example/fu
+    (:documentation "does nothing")
+    (:import-from :ns-example :main))
+(ns_example:main)

@@ -10,6 +10,7 @@ exec ros -Q -- $0 "$@"
 
 (ns :ros.script.fu.3997415348
     (:export #:main)
+    (:documentation "Example of namespace usage from ns atomic")
     (:import-from :uiop :quit))
 
 (defun main (&rest argv)
