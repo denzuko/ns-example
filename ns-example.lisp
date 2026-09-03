@@ -4,7 +4,7 @@
 (defun runner ()
         "does the work"
         (print "hello world")
-        nil)
+        t)
 
 (defun main ()
    " main block"
