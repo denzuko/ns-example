@@ -1,0 +1,8 @@
+("quicklisp" .
+ (:class qlot/source/dist:source-dist
+  :initargs (:distribution "https://beta.quicklisp.org/dist/quicklisp.txt" :%version :latest)
+  :version "2026-01-01"))
+("ns" .
+ (:class qlot/source/github:source-github
+  :initargs (:repos "denzuko/ns" :ref nil :branch nil :tag nil)
+  :version "github-9b90236a62d7334413babb2e6a7ce2bf436a0ce9"))
