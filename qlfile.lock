@@ -5,4 +5,4 @@
 ("ns" .
  (:class qlot/source/github:source-github
   :initargs (:repos "denzuko/ns" :ref nil :branch nil :tag nil)
-  :version "github-2c073fd9286aee75a74bcc28c6a0dbf4b2f48838"))
+  :version "github-b24c2a9a6e041e8952c0d431c19416d5d239d11c"))

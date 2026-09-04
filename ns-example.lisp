@@ -1,5 +1,5 @@
 ;;;; ns-example.liVp
-(ql:quickload `(:ns))
+(ql:quickload '(:ns))
 
 (ns :ns-example
     (:export #:main)
@@ -12,7 +12,8 @@
           (progn (print "Hello world.") t)
           1)))
 
-(ns :ns-example/fu
+(ns:ns :ns-example/fu
     (:documentation "does nothing")
     (:import-from :ns-example :main))
-(ns_example:main)
+
+(ns-example:main)
